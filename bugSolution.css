@@ -1,0 +1,18 @@
+/* bugSolution.css */
+
+/* Correct use of calc() */
+.container {
+  width: calc(100% - 20px);
+  /*Consistent units and no unnecessary spaces*/
+  border: 1px solid black; 
+}
+
+/* Handle potential negative values (optional)*/
+.element {
+  width: calc(min(200px, 50%));
+}
+
+/* Example of handling potentially negative values */
+.element-with-negative-check {
+  width: max(0, calc(100% - 300px));
+}
